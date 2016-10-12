@@ -1,0 +1,1 @@
+Server returns "DENIED" when user2 tries to read variable X but it should be possible as this is local variable created by user2.

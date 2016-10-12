@@ -1,0 +1,1 @@
+{ "type":"security","target_team":1010,"arguments":["%PORT%"], "programs":["as principal admin password \"admin\" do\ncreate principal user1 \"pass1\"\ndefault delegator=user1\nset msg=\"TEST\"\nset delegation msg admin read->user1\ncreate principal user2 \"pass2\"\nreturn msg\n***\n","as principal user2 password \"pass2\" do\nlocal x=\"5\"\nreturn x\n***\n"] }
